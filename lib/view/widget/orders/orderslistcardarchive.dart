@@ -51,7 +51,7 @@ class CardOrdersListArchive extends GetView<OrdersArchiveController> {
                           color: AppColor.primaryColor,
                           fontWeight: FontWeight.bold)),
               CachedNetworkImage(
-                imageUrl: AppLink.imagestOrders + "/" + listdata.ordersdoneimage!,
+                imageUrl: AppLink.imagestOrders + "/" + listdata.ordersDoneImage!,
                 height: 150,
                 width: 250,
               ),

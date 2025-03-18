@@ -1,4 +1,3 @@
-import 'package:deliverypharmacy/core/constant/color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../core/constant/routes.dart';

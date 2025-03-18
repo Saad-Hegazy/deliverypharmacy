@@ -12,7 +12,7 @@ import '../../data/model/ordersmodel.dart';
 class OrdersDetailsController extends GetxController {
   OrdersDetailsData ordersDetailsData = OrdersDetailsData(Get.find());
   CustomerDetailsData customerdetailsData = CustomerDetailsData(Get.find());
-  List<CartModel> data = [];
+  List data = [];
   String? customerphone;
   String? customername;
   late StatusRequest statusRequest;
@@ -65,8 +65,7 @@ class OrdersDetailsController extends GetxController {
     if (StatusRequest.success == statusRequest) {
       // Start backend
       if (response['status'] == "success"){
-        List listdata = response['data'];
-        data.addAll(listdata.map((e) => CartModel.fromJson(e)));
+        data = response['data'];
       } else {
         statusRequest = StatusRequest.failure;
       }
